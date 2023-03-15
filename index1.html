@@ -25,48 +25,51 @@
             <label class="switch">
                 <input type="checkbox">
                 <span class="slider"></span>
+                <span class="switch-text">Editovat program</span>
             </label>
-            <form>
-
-                <input list="typy-programu" id="typ-programu" name="typ-programu">
-                <datalist id="typy-programu">
-                    <option value="Hra">Nauka</option>
-                </datalist>
-
-                <input list="druhy-nauky" id="druh-nauky" name="druh-nauky">
-                <datalist id="druhy-nauky">
-                    <option value="Uzlování">Uzlování (30 min)</option>
-                </datalist>
-
-                <label for="delka-programu">Délka programu</label>
-                <input type="number" id="delka-programu" name="delka-programu" min="0">
-
-                <textarea id="textarea" name="textarea">
-                 </textarea>
-                <select>
-                    <option style="background-image:url(male.png);">Marcipán</option>
-                    <option style="background-image:url(female.png);">Luky</option>
-                    <option style="background-image:url(others.png);">Ent</option>
-                </select>
-                <button id="save-on-cloud">
-                </button>
+        <div class="card">
+                <form>
+    
+                    <input list="typy-programu" id="typ-programu" name="typ-programu">
+                    <datalist id="typy-programu">
+                        <option value="Nauka">Nauka</option>
+                    </datalist>
+    
+                    <input list="druhy-nauky" id="druh-nauky" name="druh-nauky">
+                    <datalist id="druhy-nauky">
+                        <option value="Uzlování">Uzlování (30 min)</option>
+                    </datalist>
+    
+                    <label for="delka-programu">Délka programu</label>
+                    <input type="number" id="delka-programu" name="delka-programu" min="0">
+    
+                    <textarea id="textarea" name="textarea">
+                     </textarea>
+                    <select>
+                        <option style="background-image:url(male.png);">Marcipán</option>
+                        <option style="background-image:url(female.png);">Luky</option>
+                        <option style="background-image:url(others.png);">Ent</option>
+                    </select>
+                    <button id="save-on-cloud">
+                    </button>
+                </form>
+    
+                <form>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                    <button id="save" class="save">
+                    </button>
+                    <button id="delete" class="delete">
+                    </button>
+                    <button id="up" class="up">
+                    </button>
+                    <button id="down" class="down">
+                    </button>
+            </div>
             </form>
-
-            <form>
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-                <button id="save" class="save">
-                </button>
-                <button id="delete" class="delete">
-                </button>
-                <button id="up" class="up">
-                </button>
-                <button id="down" class="down">
-                </button>
-        </div>
-        </form>
+        </di >
         <div class="obsah dva">
             <h2>Uložené bloky programu</h2>
             <div>
