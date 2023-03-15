@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/scripts/importScripts.js" defer></script>
+    <link rel="stylesheet" href="style/importStyles.css">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <menu>
+            <li><a href="#" class="menu-link" data-target="content1">Tvůrce programu</a></li>
+            <li><a href="#" class="menu-link" data-target="content2">Znovupoužitelné bloky</a></li>
+        </menu>
+    </nav>
+    <main class="content">
+        <div class="content1" style="display: block;">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+                <span class="switch-text">Editovat program</span>
+            </label>
+            <div class="card">
+                <form class="form">
+
+
+                 
+                    <input list="typy-programu" placeholder="Typ programu" id="typ-programu" name="typ-programu"
+                        class="form__input form__input--typ-programu">
+                    <datalist id="typy-programu">
+                        <option value="Nauka">Nauka</option>
+                    </datalist>
+
+                    <input list="druhy-nauky" placeholder="Název" id="druh-nauky" name="druh-nauky"
+                        class="form__input form__input--druh-nauky">
+                    <datalist id="druhy-nauky">
+                        <option value="Uzlování">Uzlování (30 min)</option>
+                    </datalist>
+
+                    
+                    <input type="number" placeholder="Délka programu" id="delka-programu" name="delka-programu" min="0"
+                        class="form__input form__input--delka-programu">
+
+                    <textarea id="textarea" name="textarea" class="form__textarea"></textarea>
+
+                    <select class="form__select">
+                        <option style="background-image:url(male.png);">Marcipán</option>
+                        <option style="background-image:url(female.png);">Luky</option>
+                        <option style="background-image:url(others.png);">Ent</option>
+                    </select>
+
+                    <button id="save-on-cloud" class="form__button form__button--save-on-cloud"></button>
+
+                </form>
+                <form class="form">
+                    <label class="switch form__switch">
+                        <input type="checkbox" class="form__checkbox">
+                        <span class="slider form__slider"></span>
+                    </label>
+
+
+
+                    <button id="save" class="form__button form__button--save"></button>
+                    <button id="delete" class="form__button form__button--delete"></button>
+                    <button id="up" class="form__button form__button--up"></button>
+                    <button id="down" class="form__button form__button--down"></button>
+
+                </form>
+            </div>
+            <div class="content2" style="display: none;">
+                <h2>Uložené bloky programu</h2>
+                <div>
+                    <h3>Nauka</h3>
+                    <div>
+                        <h4>Uzlování</h4>
+                        <span>30 min</span>
+                        <button>Zobrazit podrobnosti</button>
+                        <button>Smazat</button>
+                    </div>
+                </div>
+
+            </div>
+
+    </main>
+</body>
+
+</html>
