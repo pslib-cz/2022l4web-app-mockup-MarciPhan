@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/scripts/hideElement.js" defer></script>
+    <link rel="stylesheet" href="style/switch.css">
+    <title>Document</title>
+    <style>
+      
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="#" id="menu-item-1">Menu Item 1</a></li>
+          <li><a href="#" id="menu-item-2">Menu Item 2</a></li>
+        </ul>
+      </nav>
+      <div class="content"></div>
+      <div class="obsah jedna">
+      <script>
+        const menuItem1 = document.getElementById('menu-item-1');
+        const menuItem2 = document.getElementById('menu-item-2');
+        const contentDiv = document.querySelector('.content');
+      
+        menuItem1.addEventListener('click', () => {
+          // Změňte HTML obsah v divu content
+          contentDiv.innerHTML = '<p>Toto je obsah pro Menu Item 1.</p>';
+        });
+      
+        menuItem2.addEventListener('click', () => {
+          // Změňte HTML obsah v divu content
+          contentDiv.innerHTML = '<p>Toto je obsah pro Menu Item 2.</p>';
+        });
+      </script>
+      <form>
+        <input list="tipy" id="vyber-moznosti" name="ice-cream-choice">
+        <datalist id="tipy">
+          <option value="jedna">Jedna</option>
+          <option value="dva">Dva</option>
+          <option value="tri">Tři</option>
+          <option value="dalsi">Další</option>
+        </datalist>
+      </form>
+      
+      
+        <h2>Obsah pro možnost Jedna</h2>
+        <p>Toto je obsah pro možnost Jedna.</p>
+      </div>
+      
+      <div class="obsah dva">
+        <h2>Obsah pro možnost Dva</h2>
+        <p>Toto je obsah pro možnost Dva.</p>
+      </div>
+      
+      
+      
+      <script>
+        const vyberMoznosti = document.getElementById('vyber-moznosti');
+        const obsahDivs = document.querySelectorAll('.obsah');
+      
+        function zobrazObsah() {
+          // Skryjte všechny divy s obsahem
+          obsahDivs.forEach(div => {
+            div.style.display = 'none';
+          });
+      
+          // Zobrazte pouze div s odpovídajícím class atributem
+          const vybranaMoznost = vyberMoznosti.value;
+          const vybranyDiv = document.querySelector(`.obsah.${vybranaMoznost}`);
+          if (vybranyDiv) {
+            vybranyDiv.style.display = 'block';
+          }
+        }
+      
+        // Přidejte posluchači změny pro výběrové pole
+        vyberMoznosti.addEventListener('change', zobrazObsah);
+      
+        // Zobrazte výchozí obsah pro počáteční hodnotu výběrového pole
+        zobrazObsah();
+      </script>
+      
+</body>
+
+</html>
