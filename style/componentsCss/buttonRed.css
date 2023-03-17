@@ -1,8 +1,0 @@
-@import url(../styles/colors.css);
-.button .button__red{
-    background-color: var(--white);
-    color: var(--red);
-}
-.button .button__red:hover{
-background-color: var(--light-black);
-}

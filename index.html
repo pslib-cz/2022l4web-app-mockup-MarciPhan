@@ -30,44 +30,71 @@
             <div class="card">
                 <form class="form">
 
+         
+                        
+                   
+                      
+                    
+                   <div class="flex-row">
+                        <div>
+                            <input list="typy-programu" id="typ-programu" name="typ-programu"
+                                class="form__input form__input--typ-programu">
+                                <span class="floating--label">Typ programu</span>
+                            <datalist id="typy-programu">
+                                <option value="Nauka">Nauka</option>
+                            </datalist>
+                        </div>
+    
+                       <div>
+                            <input list="nazev-programu" id="nazev-programu" name="nazev-programu"
+                                class="form__input form__input--druh-nauky">
+                                <span class="floating--label">Název programu</span>
+                            <datalist id="nazev-programu">
+                                <option value="Uzlování">Uzlování (30 min)</option>
+                            </datalist>
+                       </div>
+    
+                        
+                       <div>
+                            <input type="number"  id="delka-programu" name="delka-programu" min="0"
+                                class="form__input form__input--delka-programu">
+                                <span class="floating--label">Délka programu</span>
+                       </div>
+                      
+                           <select class="form__select">
+                            <option style="background-image:url(male.png);">Marcipán</option>
+                            <option style="background-image:url(female.png);">Luky</option>
+                            <option style="background-image:url(others.png);">Ent</option>
+                        </select>
 
-                    <button id="save-on-cloud" class="form__button form__button--save-on-cloud"><i class="fa-solid fa-cloud-arrow-up"></i></button>
-                    <input list="typy-programu" placeholder="Typ programu" id="typ-programu" name="typ-programu"
-                        class="form__input form__input--typ-programu">
-                    <datalist id="typy-programu">
-                        <option value="Nauka">Nauka</option>
-                    </datalist>
-
-                    <input list="druhy-nauky" placeholder="Název" id="druh-nauky" name="druh-nauky"
-                        class="form__input form__input--druh-nauky">
-                    <datalist id="druhy-nauky">
-                        <option value="Uzlování">Uzlování (30 min)</option>
-                    </datalist>
+                   </div >
+                   <div>
+            
+                <textarea id="textarea" name="textarea" class="form__textarea"></textarea>
+           </div>
 
                     
-                    <input type="number" placeholder="Délka programu" id="delka-programu" name="delka-programu" min="0"
-                        class="form__input form__input--delka-programu">
-
-                    <textarea id="textarea" name="textarea" class="form__textarea"></textarea>
-
-                    <select class="form__select">
-                        <option style="background-image:url(male.png);">Marcipán</option>
-                        <option style="background-image:url(female.png);">Luky</option>
-                        <option style="background-image:url(others.png);">Ent</option>
-                    </select>
                 </form>
                 <form class="form">
-                    <label class="switch form__switch">
-                        <input type="checkbox" class="form__checkbox">
-                        <span class="slider form__slider"></span>
-                    </label>
-
-
-
-                    <i class="button button__red form__button--save fas fa-save"></i>
-                    <i class="button form__button--delete fas fa-trash-alt"></i>
-                    <i class="button form__button--up fas fa-arrow-up"></i>
-                    <i class="button form__button--down fas fa-arrow-down"></i>
+                    
+                    <div class="flex-row">
+                        
+                        <label class="switch form__switch">
+                            <input type="checkbox" class="form__checkbox">
+                            <span class="slider form__slider"></span>
+                            <span class="switch-text">Započítat do celkové délky</span>
+                        </label>
+    
+    
+    
+                        <div>
+                            <i class="button button__white form__button--save-on-cloud fa-solid fa-cloud-arrow-up"></i>
+                            <i class="button button__orange form__button--save fas fa-save"></i>
+                            <i class="button button__white form__button--up fas fa-arrow-up"></i>
+                            <i class="button button__white form__button--down fas fa-arrow-down"></i>
+                            <i class="button button__redtext form__button--delete fas fa-trash-alt"></i>
+                        </div>
+                    </div >
 
                 </form>
             </div>
