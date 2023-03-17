@@ -1,0 +1,8 @@
+@import url(../styles/colors.css);
+.redbutton{
+    background-color: var(--white);
+    color: var(--red);
+}
+.redbutton:hover{
+background-color: var(--light-black);
+}
