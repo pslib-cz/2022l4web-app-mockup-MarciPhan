@@ -1,19 +1,17 @@
-const menuLinks = document.querySelectorAll('.menu-link');
-  const contentDivs = document.querySelectorAll('.content1, .content2');
+const tabs = document.querySelectorAll('.tab');
+const tabContents = document.querySelectorAll('.tab-content');
 
-  menuLinks.forEach(link => {
-    link.addEventListener('click', e => {
-      e.preventDefault();
-
-      const target = link.getAttribute('data-target');
-
-      // Skryjte všechny divy s obsahem
-      contentDivs.forEach(div => {
-        div.style.display = 'none';
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const target = document.querySelector(tab.dataset.tabTarget);
+      tabContents.forEach(tabContent => {
+        tabContent.classList.remove('active');
       });
-
-      // Zobrazte pouze vybraný div
-      const selectedDiv = document.querySelector(`.${target}`);
-      selectedDiv.style.display = 'block';
+      tabs.forEach(tab => {
+        tab.classList.remove('active');
+      });
+      tab.classList.add('active');
+      target.classList.add('active');
     });
   });
+tabs[0].click();

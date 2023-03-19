@@ -1,12 +1,5 @@
+@import url(../styles/colors.css);
 *{
     font-family: Roboto, Helvetica Neue, sans-serif;
 }
 
-.flex-row {
-    display: flex;
-    justify-content: space-between;
-}
-
-.flex-row input {
-    flex: 1;
-}

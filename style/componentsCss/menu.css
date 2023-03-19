@@ -6,19 +6,27 @@ menu > li{
     list-style: none;
     margin: 0px 0px 0px 10px;
 }
-menu > li > a{
+.tab{
     text-decoration: none;
-    color: #253a5e;
+    color: var(--gray-blue);
     font-weight: 700;
     padding: 5px;
+    cursor: pointer;
 }
-menu > li > a:focus{
-    background-color: #fafafa;
-    border-bottom: #da8352 solid 2px;
+.tab:visited{
+    background-color: var(--extra-light-orange);
+    border-bottom: var(--orange) solid 2px;
     border-radius: 5px 5px 0px 0px;
 }
-menu > li > a:hover{
-    background-color: #fbf0ea;
-    border-bottom: #e5a886 solid 2px;
+.tab:hover{
+    background-color: var(--lighter-orange);
+    border-bottom: var(--orange) solid 2px;
     border-radius: 5px 5px 0px 0px;
 }
+.tab-content {
+    display: none;
+  }
+  
+  .tab-content.active {
+    display: block;
+  }

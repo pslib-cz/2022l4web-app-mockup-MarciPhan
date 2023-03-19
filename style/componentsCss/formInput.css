@@ -2,10 +2,9 @@
 
 .floating--label {
     position: relative;
-
-    bottom: 60px;
-    font-size: 11px;
-    opacity: 1;
+    right: 90px;
+    bottom: 20px;
+    font-size: small;
 }
 
 .form__input:focus {
@@ -13,19 +12,19 @@
     border-bottom: 2px solid var(--orange);
 }
 
-.form__input:focus~.floating--label {
+.form__input:focus ~ .floating--label {
     color: var(--orange);
 }
 
 .form__input {
     display: inline-block;
-    width: 50%;
     margin: 10px;
     font-size: 14px;
-    width: 200px;
+    width: 150px;
     height: 35px;
     border: 0px;
     border-bottom: 2px solid var(--gray);
+    margin-right: -5em;
 }
 
 
@@ -43,4 +42,13 @@
     background-position: left 10px center;
     background-repeat: no-repeat;
     padding: 5px 10px;
+}
+.form__input--select{  display: inline-block;
+margin: 10px;
+font-size: 14px;
+width: 100px;
+height: 35px;
+border: 0px;
+border-bottom: 2px solid var(--gray);
+margin-right: -5em;
 }

@@ -10,6 +10,7 @@
     @import url(componentsCss/buttonGreen.css) layer(componentsCss);
     @import url(componentsCss/buttonWhite.css) layer(componentsCss);
     @import url(componentsCss/formInput.css) layer(componentsCss);
+    @import url(componentsCss/card.css) layer(componentsCss);
 
     @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
 
