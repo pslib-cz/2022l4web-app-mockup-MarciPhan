@@ -9,3 +9,5 @@ Plánovač dne umožní uživatelům vytvářet plány svého dne v programovýc
 - Přepínač započítání: přepínač, který určí že se čas má započítat do celkového času.
 
 Dále by aplikace měla umožňovat uživatelům vytvářet nové bloky, upravovat nebo odstraňovat existující bloky. Uživatelé by měli mít možnost přesouvat bloky, aby mohli plánovat svůj den tak, jak jim nejlépe vyhovuje. Také bloky by mělo jít uložit do celkového seznamu znovupoužitelných bloků. Také by se měly sčítat délky jednotlivých bloků. Celý editor by měl být snadno použitelný a intuitivní, aby uživatelé mohli snadno vytvářet a upravovat své plány.
+
+Demo page: https://pslib-cz.github.io/2022l4web-app-mockup-MarciPhan/
