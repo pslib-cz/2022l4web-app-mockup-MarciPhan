@@ -1,6 +1,7 @@
 @import url(../styles/colors.css);
 
 .button {
+    display: block;
     padding: 7px 12px;
     margin: 10px;
     border-radius: 16px;
@@ -42,10 +43,11 @@ background-color: var(--light-black);
 }
 
 .button__green{
-    background-color: var(--white);
-    color: var(--black);
+    background-color: var(--green);
+    color: var(--white);
+    max-width: 15%;
 }
 
 .button__green:hover{
-background-color: var(--light-black);
+background-color: var(--light-green);
 }

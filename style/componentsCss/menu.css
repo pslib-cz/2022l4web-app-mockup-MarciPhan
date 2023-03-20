@@ -12,6 +12,7 @@ menu > li{
     font-weight: 700;
     padding: 5px;
     cursor: pointer;
+    border-bottom: transparent solid 2px;
 }
 .tab:visited{
     background-color: var(--extra-light-orange);
