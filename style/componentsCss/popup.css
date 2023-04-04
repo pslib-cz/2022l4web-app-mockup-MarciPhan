@@ -1,3 +1,5 @@
+@import url(../styles/colors.css);
+
 #myPopup {
     display: none;
     position: fixed;
@@ -5,10 +7,12 @@
     left: 50%;
     transform: translateX(-50%);
     width: 200px;
-    height: 100px;
-    background-color: red;
-    border: 2px solid darkred;
+    height: 50px;
+    background-color: var(--light-red);
+    border: 2px solid var(--dark-red);
     padding: 10px;
+    color: var(--dark-red);
+    );
   }
   
   #myPopup .close {
@@ -18,5 +22,5 @@
     cursor: pointer;
     font-size: 18px;
     font-weight: bold;
-    color: white;
+    color: var(--red);
   }
