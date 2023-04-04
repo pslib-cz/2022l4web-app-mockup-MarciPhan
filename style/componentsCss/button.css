@@ -15,39 +15,39 @@
 }
 
 
-.button__orange {
+.button--orange {
     background-color: var(--orange);
     color: var(--white);
 }
 
-.button__orange:hover{
+.button--orange:hover{
     background-color: var(--light-orange);
 }
 
-.button__redtext{
+.button--redtext{
     background-color: var(--white);
     color: var(--red);
 }
 
-.button__redtext:hover{
+.button--redtext:hover{
 background-color: var(--light-red);
 }
 
-.button__white{
+.button--white{
     background-color: var(--white);
     color: var(--black);
 }
 
-.button__white:hover{
+.button--white:hover{
 background-color: var(--light-black);
 }
 
-.button__green{
+.button--green{
     background-color: var(--green);
     color: var(--white);
     max-width: 15%;
 }
 
-.button__green:hover{
+.button--green:hover{
 background-color: var(--light-green);
 }

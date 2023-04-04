@@ -24,10 +24,10 @@ menu > li{
     border-bottom: var(--orange) solid 2px;
     border-radius: 5px 5px 0px 0px;
 }
-.tab-content {
+.tab-content--hide {
     display: none;
   }
   
-  .tab-content.active {
+  .tab-content--active {
     display: block;
   }
