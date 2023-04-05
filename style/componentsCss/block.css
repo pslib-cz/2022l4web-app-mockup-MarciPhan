@@ -19,15 +19,14 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.block::before{
+.block__add--before{
   margin-top: -20px;
 }
-.block::after{
+.block__add--after{
   margin-bottom: -30px;
 }
 
-.block::before,
-.block::after{
+.block__add {
   position: relative;
   left: 50%;
   bottom: 5px;
@@ -47,8 +46,7 @@
   transition: background-color 280ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.block::before:hover,
-.block::after:hover{
+.block__add{
   background-color: var(--light-green);
 }
 /*.form--hidden {

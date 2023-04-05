@@ -28,7 +28,7 @@
                 <span class="slider"></span>
                 <span class="switch-text">Editovat program</span>
             </label>
-            <a href="#" id="myLink" class="button button--green create"><span class="fa-solid fa-plus"></span> Vytvořit program</a>
+            <a href="#" class="active__createpopup button button--green create"><span class="fa-solid fa-plus"></span> Vytvořit program</a>
             
             <div class="block create-content">
                 <form class="form">
@@ -104,7 +104,7 @@
         </div>
             <div id="dva" class="tab-content">
                 <h2>Uložené bloky programu</h2>
-<span class="button button--green">+ Vytvořit nový programový blok</span>
+            <a href="#" class="button button--green create active__popup"><span class="fa-solid fa-plus"></span> Vytvořit nový programový blok</a>
                 <div class="category">
                     <h3>Nauka</h3>
                     <label class="switch form__switch">
@@ -165,8 +165,8 @@
                                 Totéž proveďte na druhé straně.
 
                             </p>
-                            <span class="button button--orange">Zobrazit podrobnosti</span>
-                            <i class="button button--redtext form__button--delete fas fa-trash-alt"> Smazat</i>
+                            <a class="button button--orange">Zobrazit podrobnosti</a>
+                            <a class="button button--redtext form__button--delete fas fa-trash-alt"> Smazat</a>
                         </div>
                         <div class="card">
                             <h4>Zdravověda <span class="heading--description">60 min</span></h4>
@@ -175,8 +175,8 @@
                                 jako pexeso. Potom si hráči postupně otáčí kartičky a odpovídají na otázky, když odpoví
                                 správně, mohou si kartičku nechat a pokačovat jako při pexesu. Není-li otázka
                                 zodpovězena správně, vrací se kartička zpět na stůl</p>
-                            <span class="button button--orange">Zobrazit podrobnosti</span>
-                            <i class="button button--redtext form__button--delete fas fa-trash-alt"> Smazat</i>
+                            <a class="button button--orange">Zobrazit podrobnosti</a>
+                            <a class="button button--redtext form__button--delete fas fa-trash-alt"> Smazat</a>
                         </div>
                         <div class="card">
                             <h4>Zdravověda <span class="heading--description">60 min</span></h4>
@@ -185,8 +185,8 @@
                                 jako pexeso. Potom si hráči postupně otáčí kartičky a odpovídají na otázky, když odpoví
                                 správně, mohou si kartičku nechat a pokačovat jako při pexesu. Není-li otázka
                                 zodpovězena správně, vrací se kartička zpět na stůl</p>
-                            <span class="button button--orange">Zobrazit podrobnosti</span>
-                            <i class="button button--redtext form__button--delete fas fa-trash-alt"> Smazat</i>
+                            <a class="button button--orange">Zobrazit podrobnosti</a>
+                            <a class="button button--redtext form__button--delete fas fa-trash-alt"> Smazat</a>
                         </div>
                         <div class="card">
                             <h4>Zdravověda <span class="heading--description">60 min</span></h4>
@@ -195,16 +195,16 @@
                                 jako pexeso. Potom si hráči postupně otáčí kartičky a odpovídají na otázky, když odpoví
                                 správně, mohou si kartičku nechat a pokačovat jako při pexesu. Není-li otázka
                                 zodpovězena správně, vrací se kartička zpět na stůl</p>
-                            <span class="button button--orange">Zobrazit podrobnosti</span>
-                            <i class="button button--redtext form__button--delete fas fa-trash-alt"> Smazat</i>
+                            <a class="button button--orange">Zobrazit podrobnosti</a>
+                            <a class="button button--redtext form__button--delete fas fa-trash-alt"> Smazat</a>
                         </div>
                     </div>
                 </div>
 
             </div>
-            <div id="myPopup">
-                <span class="close">&times;</span>
-                <p>Toto je popup obsah</p>
+            <div id="popup" class="popup popup--create">
+                <span class="popup_close popup_close--create">&times;</span>
+                <p>Vytvořeno</p>
               </div>
               
     </main>
