@@ -16,10 +16,10 @@
 
 <body>
 
-        <menu class="menu">
-            <li class="tab" data-tab-target="#jedna">Tvůrce programu</li>
-            <li class="tab" data-tab-target="#dva">Znovupoužitelné bloky</li>
-        </menu>
+    <menu class="menu">
+        <li class="tab" data-tab-target="#jedna">Tvůrce programu</li>
+        <li class="tab" data-tab-target="#dva">Znovupoužitelné bloky</li>
+    </menu>
     <main class="content">
         <div id="jedna" class="tab-content tab-content--jedna">
             <h2>Tvůrce programu</h2>
@@ -28,8 +28,9 @@
                 <span class="slider"></span>
                 <span class="switch-text">Editovat program</span>
             </label>
-            <a href="#" class="active__createpopup button button--green create"><span class="fa-solid fa-plus"></span> Vytvořit program</a>
-            
+            <a href="#" class="active__createpopup button button--green button--small create"><span
+                    class="fa-solid fa-plus"></span> Vytvořit program</a>
+
             <div class="block create-content">
                 <form class="form">
 
@@ -59,7 +60,7 @@
 
 
                         <div>
-                            <input type="number" id="delka-programu" name="delka-programu" min="0"
+                            <input type="number" id="delka-programu" placeholder="v minutách" name="delka-programu" min="0"
                                 class="form__input form__input--delka-programu">
                             <span class="floating--label">Délka programu</span>
                         </div>
@@ -102,111 +103,234 @@
                 </form>
             </div>
         </div>
-            <div id="dva" class="tab-content">
-                <h2>Uložené bloky programu</h2>
-            <a href="#" class="button button--green create active__popup"><span class="fa-solid fa-plus"></span> Vytvořit nový programový blok</a>
-                <div class="category">
-                    <h3>Nauka</h3>
-                    <label class="switch form__switch">
-                        <input type="checkbox" class="form__checkbox">
-                        <span class="slider form__slider"></span>
-                        <span class="switch-text">Automaticky ukládat nové bloky</span>
-                    </label>
-                    <div class="cardslist">
-                        <div class="card">
-                            <h4>Uzlování <span class="heading--description">30 min</span></h4>
-                            <p class="card__description">Učení praxí
+        <div id="dva" class="tab-content">
+            <h2>Knihovna programových bloků</h2>
+            <a href="#" class="button button--green button--small create active__popup"><span
+                    class="fa-solid fa-plus"></span> Vytvořit nový programový blok</a>
+            <div class="category">
+                <h3>Nauka</h3>
+                <label class="switch form__switch">
+                    <input type="checkbox" class="form__checkbox">
+                    <span class="slider form__slider"></span>
+                    <span class="switch-text">Automaticky ukládat nové bloky</span>
+                </label>
+                <div class="cardslist">
+                    <div class="card">
+                        <h4>Uzlování <span class="heading--description">30 min</span></h4>
+                        <p class="card__description">Učení praxí
 
-                                Ambulantní spojka
+                            Ambulantní spojka
 
-                                Ambulantní spojka se používá ke svázání konců dvou stejně silných lan. Je plochá a lze
-                                ji
-                                použít i k zakončení obvazu. Není spolehlivá při použití velké síly a hůře se rozvazuje,
-                                ale
-                                je velmi vhodná pro běžné vázání.
+                            Ambulantní spojka se používá ke svázání konců dvou stejně silných lan. Je plochá a lze
+                            ji
+                            použít i k zakončení obvazu. Není spolehlivá při použití velké síly a hůře se rozvazuje,
+                            ale
+                            je velmi vhodná pro běžné vázání.
 
-                                Škotova spojka
+                            Škotova spojka
 
-                                Klasický námořnický uzel, skotský uzel, se používá k vázání dvou lan různé tloušťky, ale
-                                je
-                                také výborný například k připevnění lana k plachtě. Snadno se rozplétá. Silnější lano
-                                vytvoří smyčku, tenčí lano se provlékne smyčkou.
+                            Klasický námořnický uzel, skotský uzel, se používá k vázání dvou lan různé tloušťky, ale
+                            je
+                            také výborný například k připevnění lana k plachtě. Snadno se rozplétá. Silnější lano
+                            vytvoří smyčku, tenčí lano se provlékne smyčkou.
 
-                                Lodní smyčka
+                            Lodní smyčka
 
-                                Lodní smyčka se používá k připevnění lana ke kůlu. Často se používá k zahájení nebo
-                                ukončení
-                                křížových vazeb ve vázaných konstrukcích. Při "rychlém vázání" lodní smyčky vytvoříte na
-                                laně dvě smyčky, které řádně smyčkujete přes sebe, abyste je mohli nasunout na kůl.
+                            Lodní smyčka se používá k připevnění lana ke kůlu. Často se používá k zahájení nebo
+                            ukončení
+                            křížových vazeb ve vázaných konstrukcích. Při "rychlém vázání" lodní smyčky vytvoříte na
+                            laně dvě smyčky, které řádně smyčkujete přes sebe, abyste je mohli nasunout na kůl.
 
-                                Rybářská spojka
+                            Rybářská spojka
 
-                                Rybářská spojka je užitečná při vázání dvou lan stejné tloušťky, která mohou být navíc
-                                mokrá
-                                nebo kluzká. Velmi dobře drží i při silném tahu za konce obou lan. Umístěte obě lana
-                                proti
-                                sobě tak, aby oba konce ležely vedle sebe. Volným koncem jednoho lana udělejte na druhém
-                                smyčku. Totéž proveďte s druhým volným koncem druhého lana. Poté oba uzly důkladně
-                                utáhněte.
+                            Rybářská spojka je užitečná při vázání dvou lan stejné tloušťky, která mohou být navíc
+                            mokrá
+                            nebo kluzká. Velmi dobře drží i při silném tahu za konce obou lan. Umístěte obě lana
+                            proti
+                            sobě tak, aby oba konce ležely vedle sebe. Volným koncem jednoho lana udělejte na druhém
+                            smyčku. Totéž proveďte s druhým volným koncem druhého lana. Poté oba uzly důkladně
+                            utáhněte.
 
-                                Osmičkový uzel
+                            Osmičkový uzel
 
-                                Tento jednoduchý uzel slouží k tomu, aby vám konec lana nevyklouzl z ruky. Jeho variantu
-                                -
-                                osmičkovou smyčku - používají horolezci při navazování do postroje nebo úvazku. Tato
-                                smyčka
-                                je velmi spolehlivá a pevná. Další variantou je osmičková spojka, která se používá ke
-                                spojení lan.
+                            Tento jednoduchý uzel slouží k tomu, aby vám konec lana nevyklouzl z ruky. Jeho variantu
+                            -
+                            osmičkovou smyčku - používají horolezci při navazování do postroje nebo úvazku. Tato
+                            smyčka
+                            je velmi spolehlivá a pevná. Další variantou je osmičková spojka, která se používá ke
+                            spojení lan.
 
-                                Zkracovačka
+                            Zkracovačka
 
-                                Zkracovačka zkracuje lano, aniž by bylo nutné kus lana odříznout. Nejprve lano namotejte
-                                podle toho, o kolik ho chcete zkrátit. Udělejte smyčku na jednom konci lana a zatáhněte.
-                                Totéž proveďte na druhé straně.
+                            Zkracovačka zkracuje lano, aniž by bylo nutné kus lana odříznout. Nejprve lano namotejte
+                            podle toho, o kolik ho chcete zkrátit. Udělejte smyčku na jednom konci lana a zatáhněte.
+                            Totéž proveďte na druhé straně.
 
-                            </p>
-                            <a class="button button--orange">Zobrazit podrobnosti</a>
-                            <a class="button button--redtext form__button--delete fas fa-trash-alt"> Smazat</a>
-                        </div>
-                        <div class="card">
-                            <h4>Zdravověda <span class="heading--description">60 min</span></h4>
-                            <p class="card__description"> Na kartičky se předem napíšou otázky ze zdravovědy. Pro větší
-                                počet hráčů se mohou přidat i otázky z jiných oborů. Kartičky se rozprostřou na stůl
-                                jako pexeso. Potom si hráči postupně otáčí kartičky a odpovídají na otázky, když odpoví
-                                správně, mohou si kartičku nechat a pokačovat jako při pexesu. Není-li otázka
-                                zodpovězena správně, vrací se kartička zpět na stůl</p>
-                            <a class="button button--orange">Zobrazit podrobnosti</a>
-                            <a class="button button--redtext form__button--delete fas fa-trash-alt"> Smazat</a>
-                        </div>
-                        <div class="card">
-                            <h4>Zdravověda <span class="heading--description">60 min</span></h4>
-                            <p class="card__description"> Na kartičky se předem napíšou otázky ze zdravovědy. Pro větší
-                                počet hráčů se mohou přidat i otázky z jiných oborů. Kartičky se rozprostřou na stůl
-                                jako pexeso. Potom si hráči postupně otáčí kartičky a odpovídají na otázky, když odpoví
-                                správně, mohou si kartičku nechat a pokačovat jako při pexesu. Není-li otázka
-                                zodpovězena správně, vrací se kartička zpět na stůl</p>
-                            <a class="button button--orange">Zobrazit podrobnosti</a>
-                            <a class="button button--redtext form__button--delete fas fa-trash-alt"> Smazat</a>
-                        </div>
-                        <div class="card">
-                            <h4>Zdravověda <span class="heading--description">60 min</span></h4>
-                            <p class="card__description"> Na kartičky se předem napíšou otázky ze zdravovědy. Pro větší
-                                počet hráčů se mohou přidat i otázky z jiných oborů. Kartičky se rozprostřou na stůl
-                                jako pexeso. Potom si hráči postupně otáčí kartičky a odpovídají na otázky, když odpoví
-                                správně, mohou si kartičku nechat a pokačovat jako při pexesu. Není-li otázka
-                                zodpovězena správně, vrací se kartička zpět na stůl</p>
-                            <a class="button button--orange">Zobrazit podrobnosti</a>
-                            <a class="button button--redtext form__button--delete fas fa-trash-alt"> Smazat</a>
-                        </div>
+                        </p>
+                        <a class="button button--orange">Zobrazit podrobnosti</a>
+                        <a class="button button--redtext form__button--delete"> <span class="fas fa-trash-alt"></span> Smazat</a>
+                    </div>
+                    <div class="card">
+                        <h4>Zdravověda <span class="heading--description">60 min</span></h4>
+                        <p class="card__description"> Na kartičky se předem napíšou otázky ze zdravovědy. Pro větší
+                            počet hráčů se mohou přidat i otázky z jiných oborů. Kartičky se rozprostřou na stůl
+                            jako pexeso. Potom si hráči postupně otáčí kartičky a odpovídají na otázky, když odpoví
+                            správně, mohou si kartičku nechat a pokačovat jako při pexesu. Není-li otázka
+                            zodpovězena správně, vrací se kartička zpět na stůl</p>
+                        <a class="button button--orange">Zobrazit podrobnosti</a>
+                        <a class="button button--redtext form__button--delete"> <span class="fas fa-trash-alt"></span> Smazat</a>
+                    </div>
+                    <div class="card">
+                        <h4>Zdravověda <span class="heading--description">60 min</span></h4>
+                        <p class="card__description"> Na kartičky se předem napíšou otázky ze zdravovědy. Pro větší
+                            počet hráčů se mohou přidat i otázky z jiných oborů. Kartičky se rozprostřou na stůl
+                            jako pexeso. Potom si hráči postupně otáčí kartičky a odpovídají na otázky, když odpoví
+                            správně, mohou si kartičku nechat a pokačovat jako při pexesu. Není-li otázka
+                            zodpovězena správně, vrací se kartička zpět na stůl</p>
+                        <a class="button button--orange">Zobrazit podrobnosti</a>
+                        <a class="button button--redtext form__button--delete"> <span class="fas fa-trash-alt"></span> Smazat</a>
+                    </div>
+                    <div class="card">
+                        <h4>Zdravověda <span class="heading--description">60 min</span></h4>
+                        <p class="card__description"> Na kartičky se předem napíšou otázky ze zdravovědy. Pro větší
+                            počet hráčů se mohou přidat i otázky z jiných oborů. Kartičky se rozprostřou na stůl
+                            jako pexeso. Potom si hráči postupně otáčí kartičky a odpovídají na otázky, když odpoví
+                            správně, mohou si kartičku nechat a pokačovat jako při pexesu. Není-li otázka
+                            zodpovězena správně, vrací se kartička zpět na stůl</p>
+                        <a class="button button--orange">Zobrazit podrobnosti</a>
+                        <a class="button button--redtext form__button--delete"> <span class="fas fa-trash-alt"></span> Smazat</a>
                     </div>
                 </div>
-
             </div>
-            <div id="popup" class="popup popup--create">
-                <span class="popup_close popup_close--create">&times;</span>
-                <p>Vytvořeno</p>
-              </div>
-              
+
+        </div>
+        <div class="card">
+            <div>
+                <input id="nazev-programu" name="nazev-programu" class="form__input form__input--druh-nauky">
+                <span class="floating--label">Název programu</span>
+            </div>
+            <div>
+                <input id="typ-programu" name="typ-programu" class="form__input form__input--typ-programu">
+                <span class="floating--label">Typ programu</span>
+            </div>
+            <div>
+                <input type="number" id="delka-programu" name="delka-programu" min="0" class="form__input form__input--delka-programu">
+                <span class="floating--label">Délka programu</span>
+            </div>
+            <div>
+                <textarea id="textarea" name="textarea" class="form__textarea form--hidden"></textarea>
+            </div>
+            <a class="button button--green">Vytvořit</a>
+            <a class="button button--white"> Zrušit</a>
+        </div>
+        <div id="popup" class="popup popup--create">
+            <span class="popup_close popup_close--create">&times;</span>
+            <p>Program vytvořen.</p>
+        </div>
+        <div id="popup" class="popup popup--create">
+            <span class="popup_close popup_close--create">&times;</span>
+            <p>Blok programu přidán.</p>
+        </div>
+        <div id="popup" class="popup popup--create">
+            <span class="popup_close popup_close--create">&times;</span>
+            <p>Blok programu uložen.</p>
+        </div>
+        <div id="popup" class="popup popup--create">
+            <span class="popup_close popup_close--create">&times;</span>
+            <p>Blok programu uložen do knihovny.</p>
+        </div>
+        <div id="popup" class="popup popup--create">
+            <span class="popup_close popup_close--create">&times;</span>
+            <p>Blok programu smazán.</p>
+        </div>
+        <div id="popup" class="popup popup--create">
+            <span class="popup_close popup_close--create">&times;</span>
+            <p>Blok programu vytvořen.</p>
+        </div>
+        <div class="card">
+            <div>
+                <input id="typ-programu" name="typ-programu" class="form__input form__input--typ-programu" value="Nauka">
+                <span class="floating--label">Typ programu</span>
+            </div>
+        <div>
+            <input id="nazev-programu" name="nazev-programu" class="form__input form__input--druh-nauky" value="Uzlování">
+            <span class="floating--label">Název programu</span>
+        </div>
+        <div>
+            <input type="number" id="delka-programu" value="30" name="delka-programu" min="0"
+                class="form__input form__input--delka-programu">
+            <span class="floating--label">Délka programu</span>
+        </div>
+            <textarea id="textarea" name="textarea" class="form__textarea form--hidden">Učení praxí
+
+                Ambulantní spojka
+
+                Ambulantní spojka se používá ke svázání konců dvou stejně silných lan. Je plochá a lze
+                ji
+                použít i k zakončení obvazu. Není spolehlivá při použití velké síly a hůře se rozvazuje,
+                ale
+                je velmi vhodná pro běžné vázání.
+
+                Škotova spojka
+
+                Klasický námořnický uzel, skotský uzel, se používá k vázání dvou lan různé tloušťky, ale
+                je
+                také výborný například k připevnění lana k plachtě. Snadno se rozplétá. Silnější lano
+                vytvoří smyčku, tenčí lano se provlékne smyčkou.
+
+                Lodní smyčka
+
+                Lodní smyčka se používá k připevnění lana ke kůlu. Často se používá k zahájení nebo
+                ukončení
+                křížových vazeb ve vázaných konstrukcích. Při "rychlém vázání" lodní smyčky vytvoříte na
+                laně dvě smyčky, které řádně smyčkujete přes sebe, abyste je mohli nasunout na kůl.
+
+                Rybářská spojka
+
+                Rybářská spojka je užitečná při vázání dvou lan stejné tloušťky, která mohou být navíc
+                mokrá
+                nebo kluzká. Velmi dobře drží i při silném tahu za konce obou lan. Umístěte obě lana
+                proti
+                sobě tak, aby oba konce ležely vedle sebe. Volným koncem jednoho lana udělejte na druhém
+                smyčku. Totéž proveďte s druhým volným koncem druhého lana. Poté oba uzly důkladně
+                utáhněte.
+
+                Osmičkový uzel
+
+                Tento jednoduchý uzel slouží k tomu, aby vám konec lana nevyklouzl z ruky. Jeho variantu
+                -
+                osmičkovou smyčku - používají horolezci při navazování do postroje nebo úvazku. Tato
+                smyčka
+                je velmi spolehlivá a pevná. Další variantou je osmičková spojka, která se používá ke
+                spojení lan.
+
+                Zkracovačka
+
+                Zkracovačka zkracuje lano, aniž by bylo nutné kus lana odříznout. Nejprve lano namotejte
+                podle toho, o kolik ho chcete zkrátit. Udělejte smyčku na jednom konci lana a zatáhněte.
+                Totéž proveďte na druhé straně.
+
+            </textarea>
+            <a class="button button--orange form__button--save"><span class="fas fa-save"></span> Uložit</a>
+           <a class="button button--redtext form__button--delete"> <span class="fas fa-trash-alt"></span> Smazat</a>
+           <a class="button button--white"> Zrušit</a>
+        </div>
+        <div class="card">
+            <span class="description">Název programu:</span>
+            <h4>Uzlování</h4>
+            <span class="description">Typ programu:</span>
+            <h4>Nauka</h4>
+            <span class="description">Délka programu:</span>
+            <h4>30 minut</h4>
+            <p class="card__text"> Na kartičky se předem napíšou otázky ze zdravovědy. Pro větší
+                počet hráčů se mohou přidat i otázky z jiných oborů. Kartičky se rozprostřou na stůl
+                jako pexeso. Potom si hráči postupně otáčí kartičky a odpovídají na otázky, když odpoví
+                správně, mohou si kartičku nechat a pokačovat jako při pexesu. Není-li otázka
+                zodpovězena správně, vrací se kartička zpět na stůl.</p>
+                <a class="button button--orange form__button--pencil"><span class="fas fa-pen"></span> Upravit</a>
+            <a class="button button--redtext form__button--delete"> <span class="fas fa-trash-alt"></span> Smazat</a>
+            <a class="button button--white"> Zrušit</a>
+        </div>
     </main>
 </body>
 
