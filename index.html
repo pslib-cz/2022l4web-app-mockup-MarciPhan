@@ -17,11 +17,11 @@
 <body>
 
     <menu class="menu">
-        <li class="tab" data-tab-target="#jedna">Tvůrce programu</li>
-        <li class="tab" data-tab-target="#dva">Znovupoužitelné bloky</li>
+        <li class="tab" data-tab-target="#one">Tvůrce programu</li>
+        <li class="tab" data-tab-target="#two">Znovupoužitelné bloky</li>
     </menu>
     <main class="content">
-        <div id="jedna" class="tab-content tab-content--jedna">
+        <div id="one" class="tab-content tab-content--one">
             <h2>Tvůrce programu</h2>
             <label class="switch">
                 <input type="checkbox">
@@ -60,8 +60,8 @@
 
 
                         <div>
-                            <input type="number" id="delka-programu" placeholder="v minutách" name="delka-programu" min="0"
-                                class="form__input form__input--delka-programu">
+                            <input type="number" id="delka-programu" placeholder="v minutách" name="delka-programu"
+                                min="0" class="form__input form__input--delka-programu">
                             <span class="floating--label">Délka programu</span>
                         </div>
 
@@ -103,10 +103,12 @@
                 </form>
             </div>
         </div>
-        <div id="dva" class="tab-content">
+        <div id="two" class="tab-content">
             <h2>Knihovna programových bloků</h2>
-            <a href="#" class="button button--green button--small create active__popup"><span
-                    class="fa-solid fa-plus"></span> Vytvořit nový programový blok</a>
+            <a href="#" class="button button--green button--small button__createBlockCloud">
+                <span class="fa-solid fa-plus"></span> Vytvořit nový programový blok
+            </a>
+
             <div class="category">
                 <h3>Nauka</h3>
                 <label class="switch form__switch">
@@ -115,7 +117,7 @@
                     <span class="switch-text">Automaticky ukládat nové bloky</span>
                 </label>
                 <div class="cardslist">
-                    <div class="card">
+                    <div class="card card--small">
                         <h4>Uzlování <span class="heading--description">30 min</span></h4>
                         <p class="card__description">Učení praxí
 
@@ -168,9 +170,9 @@
 
                         </p>
                         <a class="button button--orange">Zobrazit podrobnosti</a>
-                        <a class="button button--redtext form__button--delete"> <span class="fas fa-trash-alt"></span> Smazat</a>
+                        
                     </div>
-                    <div class="card">
+                    <div class="card card--small">
                         <h4>Zdravověda <span class="heading--description">60 min</span></h4>
                         <p class="card__description"> Na kartičky se předem napíšou otázky ze zdravovědy. Pro větší
                             počet hráčů se mohou přidat i otázky z jiných oborů. Kartičky se rozprostřou na stůl
@@ -178,9 +180,9 @@
                             správně, mohou si kartičku nechat a pokačovat jako při pexesu. Není-li otázka
                             zodpovězena správně, vrací se kartička zpět na stůl</p>
                         <a class="button button--orange">Zobrazit podrobnosti</a>
-                        <a class="button button--redtext form__button--delete"> <span class="fas fa-trash-alt"></span> Smazat</a>
+                        
                     </div>
-                    <div class="card">
+                    <div class="card card--small">
                         <h4>Zdravověda <span class="heading--description">60 min</span></h4>
                         <p class="card__description"> Na kartičky se předem napíšou otázky ze zdravovědy. Pro větší
                             počet hráčů se mohou přidat i otázky z jiných oborů. Kartičky se rozprostřou na stůl
@@ -188,9 +190,9 @@
                             správně, mohou si kartičku nechat a pokačovat jako při pexesu. Není-li otázka
                             zodpovězena správně, vrací se kartička zpět na stůl</p>
                         <a class="button button--orange">Zobrazit podrobnosti</a>
-                        <a class="button button--redtext form__button--delete"> <span class="fas fa-trash-alt"></span> Smazat</a>
+                        
                     </div>
-                    <div class="card">
+                    <div class="card card--small">
                         <h4>Zdravověda <span class="heading--description">60 min</span></h4>
                         <p class="card__description"> Na kartičky se předem napíšou otázky ze zdravovědy. Pro větší
                             počet hráčů se mohou přidat i otázky z jiných oborů. Kartičky se rozprostřou na stůl
@@ -198,31 +200,41 @@
                             správně, mohou si kartičku nechat a pokačovat jako při pexesu. Není-li otázka
                             zodpovězena správně, vrací se kartička zpět na stůl</p>
                         <a class="button button--orange">Zobrazit podrobnosti</a>
-                        <a class="button button--redtext form__button--delete"> <span class="fas fa-trash-alt"></span> Smazat</a>
+                        
                     </div>
                 </div>
             </div>
 
         </div>
-        <div class="card">
-            <div>
-                <input id="nazev-programu" name="nazev-programu" class="form__input form__input--druh-nauky">
-                <span class="floating--label">Název programu</span>
+        <div id="modalPopup-createBlockCloud" class="modal">
+            <div class="modal-content card">
+                <div class="block__flex-row--left">
+                    <div>
+                        <input id="nazev-programu" name="nazev-programu" class="form__input form__input--druh-nauky">
+                        <span class="floating--label">Název programu</span>
+                    </div>
+                    <div>
+                        <input id="typ-programu" name="typ-programu" class="form__input form__input--typ-programu">
+                        <span class="floating--label">Typ programu</span>
+                    </div>
+                    <div>
+                        <input type="number" id="delka-programu" name="delka-programu" min="0"
+                            class="form__input form__input--delka-programu">
+                        <span class="floating--label">Délka programu</span>
+                    </div>
+                </div>
+                <div>
+                    <textarea id="textarea" name="textarea" class="form__textarea form--hidden"></textarea>
+                </div>
+                <a class="button button--green modalPopup-createBlockCloud">Vytvořit</a>
+                <a class="button button--white modalPopup-createBlockCloud__close"> Zrušit</a>
             </div>
-            <div>
-                <input id="typ-programu" name="typ-programu" class="form__input form__input--typ-programu">
-                <span class="floating--label">Typ programu</span>
-            </div>
-            <div>
-                <input type="number" id="delka-programu" name="delka-programu" min="0" class="form__input form__input--delka-programu">
-                <span class="floating--label">Délka programu</span>
-            </div>
-            <div>
-                <textarea id="textarea" name="textarea" class="form__textarea form--hidden"></textarea>
-            </div>
-            <a class="button button--green">Vytvořit</a>
-            <a class="button button--white"> Zrušit</a>
         </div>
+        <div id="popup-createBlockCloud" class="popup popup--create">
+            <span class="popup_close active__popup">&times;</span>
+            <p>Blok programu uložen do knihovny</p>
+        </div>
+        
         <div id="popup_create-plan" class="popup popup--create">
             <span class="popup_close popup_close--create">&times;</span>
             <p>Program vytvořen</p>
@@ -235,10 +247,6 @@
             <span class="popup_close popup_close--create">&times;</span>
             <p>Blok programu uložen</p>
         </div>
-        <div id="popup_cloud-save-block_plan" class="popup popup--create">
-            <span class="popup_close popup_close--create">&times;</span>
-            <p>Blok programu uložen do knihovny</p>
-        </div>
         <div id="popup_delete-block_plan" class="popup popup--create">
             <span class="popup_close popup_close--create">&times;</span>
             <p>Blok programu smazán</p>
@@ -247,20 +255,24 @@
             <span class="popup_close popup_close--create">&times;</span>
             <p>Blok programu vytvořen</p>
         </div>
-        <div id="popup_create-block_plan" class="card card--small">
-            <div>
-                <input id="typ-programu" name="typ-programu" class="form__input form__input--typ-programu" value="Nauka">
-                <span class="floating--label">Typ programu</span>
-            </div>
-        <div>
-            <input id="nazev-programu" name="nazev-programu" class="form__input form__input--druh-nauky" value="Uzlování">
-            <span class="floating--label">Název programu</span>
-        </div>
-        <div>
-            <input type="number" id="delka-programu" value="30" name="delka-programu" min="0"
-                class="form__input form__input--delka-programu">
-            <span class="floating--label">Délka programu</span>
-        </div>
+        <div id="popup_create-block_plan" class="card">
+            
+                <div>
+                    <input id="typ-programu" name="typ-programu" class="form__input form__input--typ-programu"
+                        value="Nauka">
+                    <span class="floating--label">Typ programu</span>
+                </div>
+                <div>
+                    <input id="nazev-programu" name="nazev-programu" class="form__input form__input--druh-nauky"
+                        value="Uzlování">
+                    <span class="floating--label">Název programu</span>
+                </div>
+                <div>
+                    <input type="number" id="delka-programu" value="30" name="delka-programu" min="0"
+                        class="form__input form__input--delka-programu">
+                    <span class="floating--label">Délka programu</span>
+                </div>
+         
             <textarea id="textarea" name="textarea" class="form__textarea form--hidden">Učení praxí
 
                 Ambulantní spojka
@@ -312,8 +324,8 @@
 
             </textarea>
             <a class="button button--orange form__button--save"><span class="fas fa-save"></span> Uložit</a>
-           <a class="button button--redtext form__button--delete"> <span class="fas fa-trash-alt"></span> Smazat</a>
-           <a class="button button--white"> Zrušit</a>
+            <a class="button button--redtext form__button--delete"> <span class="fas fa-trash-alt"></span> Smazat</a>
+            <a class="button button--white"> Zrušit</a>
         </div>
         <div class="card">
             <span class="description">Název programu:</span>
@@ -327,7 +339,7 @@
                 jako pexeso. Potom si hráči postupně otáčí kartičky a odpovídají na otázky, když odpoví
                 správně, mohou si kartičku nechat a pokačovat jako při pexesu. Není-li otázka
                 zodpovězena správně, vrací se kartička zpět na stůl.</p>
-                <a class="button button--orange form__button--pencil"><span class="fas fa-pen"></span> Upravit</a>
+            <a class="button button--orange form__button--pencil"><span class="fas fa-pen"></span> Upravit</a>
             <a class="button button--redtext form__button--delete"> <span class="fas fa-trash-alt"></span> Smazat</a>
             <a class="button button--white"> Zrušit</a>
         </div>

@@ -1,27 +1,24 @@
-// získání odkazů
-var myLinks = document.querySelectorAll(".active__popup");
+// Získání všech elementů s třídou .popup
+var myPopups = document.querySelectorAll('.popup');
 
-// získání popupu
-var myPopup = document.getElementById("popup");
-
-// získání tlačítka s křížkem
-var closeBtn = myPopup.querySelector(".popup_close");
-
-// funkce pro skrytí popupu
-function hidePopup() {
-  myPopup.style.display = "none"; // skrytí popupu
+// Funkce pro skrytí popupu po 3 sekundách (3000 ms)
+function hidePopup(popup) {
+  popup.style.display = 'none';
 }
 
-// přidání event listeneru pro kliknutí na každý odkaz
-myLinks.forEach(function(link) {
-  link.addEventListener("click", function(event) {
-    event.preventDefault(); // zamezení výchozího chování odkazu
-    myPopup.style.display = "block"; // zobrazení popupu
-    setTimeout(hidePopup, 7000); // skrytí popupu po 7 vteřinách
-  });
-});
+// Přidání event listeneru pro kliknutí na tlačítka s křížkem u všech popupů
+myPopups.forEach(function(popup) {
+  var closeBtn = popup.querySelector('.popup_close');
+  
+  // Skrytí popupu po 3 sekundách (3000 ms)
+  setTimeout(function() {
+    hidePopup(popup);
+  }, 3000);
 
-// přidání event listeneru pro kliknutí na tlačítko s křížkem
-closeBtn.addEventListener("click", function() {
-  myPopup.style.display = "none"; // skrytí popupu
+  // Přidání event listeneru pro kliknutí na tlačítko s křížkem, pokud je tlačítko nalezeno
+  if (closeBtn) {
+    closeBtn.addEventListener("click", function() {
+      hidePopup(popup);
+    });
+  }
 });
