@@ -19,7 +19,7 @@ modal.addEventListener('click', function(event) {
   }
 });
 
-// Zavření modálního popupu a zobrazení popupu s ID popup_cloud-save-block_plan po kliknutí na odkaz s třídou .save-block_plan
+// Zavření modálního popupu a zobrazení popupu s ID modalPopup-createBlockCloud po kliknutí na odkaz s třídou .popup-createBlockCloud
 createBlockLink.addEventListener('click', function() {
   modal.style.display = 'none';
   cloudCreateBlockPopup.style.display = 'block';

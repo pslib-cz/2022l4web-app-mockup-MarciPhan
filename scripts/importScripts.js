@@ -15,6 +15,24 @@ import('./scriptsComponents/menu.js')
     console.log(`popup.js se nepodařilo načíst. Chyba: ${error}`);
   });
   
+  //modalPopup-editBlockCloud.js
+  import('./scriptsComponents/modalPopup-createBlockCloud.js')
+  .then(() => {
+    console.log('modalPopup-createBlockCloud.js byl načten.');
+  })
+  .catch((error) => {
+    console.log(`modalPopup-creteBlockCloud.js se nepodařilo načíst. Chyba: ${error}`);
+  });
+
+  //modalPopup-detailBlockCloud.js
+  import('./scriptsComponents/modalPopup-createBlockCloud.js')
+  .then(() => {
+    console.log('modalPopup-createBlockCloud.js byl načten.');
+  })
+  .catch((error) => {
+    console.log(`modalPopup-creteBlockCloud.js se nepodařilo načíst. Chyba: ${error}`);
+  });
+
   //modalPopup-createBlockCloud.js
   import('./scriptsComponents/modalPopup-createBlockCloud.js')
   .then(() => {
