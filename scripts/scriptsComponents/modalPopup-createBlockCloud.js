@@ -12,7 +12,7 @@ myLinks.forEach(function(link) {
   });
 });
 
-// Zavření modálního popupu po kliknutí na ikonu kříže nebo na odkazy s třídou .modalPopup-createBlockCloud__close
+// Zavření modálního popupu po kliknutí na odkazy s třídou .modalPopup-createBlockCloud__close
 modal.addEventListener('click', function(event) {
   if (event.target.classList.contains('modalPopup-createBlockCloud__close') || event.target.classList.contains('active__popup')) {
     modal.style.display = 'none';

@@ -1,8 +1,10 @@
 var modal = document.getElementById('modalPopup-editBlockCloud');
 var modalClose = document.querySelector('.modalPopup-editBlockCloud__close');
 var myLinks = document.querySelectorAll('.button__editBlockCloud');
-var editBlockLink = document.querySelector('.modalPopup-editBlockCloud');
-var cloudEditBlockPopup = document.getElementById('popup-editBlockCloud');
+var saveBlockLink = document.querySelector('.modalPopup-saveBlockCloud');
+var cloudSaveBlockPopup = document.getElementById('popup_cloud-save-block_plan');
+var deleteBlockLink = document.querySelector('.popup-deleteBlockCloud');
+var cloudDeleteBlockPopup = document.getElementById('popup-deleteBlockCloud');
 
 // Otevření modálního popupu po kliknutí na odkazy
 myLinks.forEach(function(link) {
@@ -12,15 +14,18 @@ myLinks.forEach(function(link) {
   });
 });
 
-// Zavření modálního popupu po kliknutí na ikonu kříže nebo na odkazy s třídou .modalPopup-editBlockCloud__close
-modal.addEventListener('click', function(event) {
-  if (event.target.classList.contains('modalPopup-editBlockCloud__close') || event.target.classList.contains('active__popup')) {
-    modal.style.display = 'none';
-  }
+// Zavření modálního popupu po kliknutí na odkazy s třídou .modalPopup-editBlockCloud__close
+modalClose.addEventListener('click', function(event) {
+  modal.style.display = 'none';
 });
 
 // Zavření modálního popupu a zobrazení popupu s ID popup_cloud-save-block_plan po kliknutí na odkaz s třídou .save-block_plan
-editBlockLink.addEventListener('click', function() {
+saveBlockLink.addEventListener('click', function() {
   modal.style.display = 'none';
-  cloudEditBlockPopup.style.display = 'block';
+  cloudSaveBlockPopup.style.display = 'block';
+});
+// Zavření modálního popupu a zobrazení popupu s ID modalPopup-deleteBlockCloud po kliknutí na odkaz s třídou .modalPopup-deleteBlockCloud
+deleteBlockLink.addEventListener('click', function() {
+  modal.style.display = 'none';
+  cloudDeleteBlockPopup.style.display = 'block';
 });

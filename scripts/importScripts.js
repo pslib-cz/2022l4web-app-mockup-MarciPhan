@@ -15,31 +15,31 @@ import('./scriptsComponents/menu.js')
     console.log(`popup.js se nepodařilo načíst. Chyba: ${error}`);
   });
   
-  //modalPopup-editBlockCloud.js
-  import('./scriptsComponents/modalPopup-createBlockCloud.js')
-  .then(() => {
-    console.log('modalPopup-createBlockCloud.js byl načten.');
-  })
-  .catch((error) => {
-    console.log(`modalPopup-creteBlockCloud.js se nepodařilo načíst. Chyba: ${error}`);
-  });
-
-  //modalPopup-detailBlockCloud.js
-  import('./scriptsComponents/modalPopup-createBlockCloud.js')
-  .then(() => {
-    console.log('modalPopup-createBlockCloud.js byl načten.');
-  })
-  .catch((error) => {
-    console.log(`modalPopup-creteBlockCloud.js se nepodařilo načíst. Chyba: ${error}`);
-  });
-
   //modalPopup-createBlockCloud.js
   import('./scriptsComponents/modalPopup-createBlockCloud.js')
   .then(() => {
     console.log('modalPopup-createBlockCloud.js byl načten.');
   })
   .catch((error) => {
-    console.log(`modalPopup-creteBlockCloud.js se nepodařilo načíst. Chyba: ${error}`);
+    console.log(`modalPopup-createBlockCloud.js se nepodařilo načíst. Chyba: ${error}`);
+  });
+
+  //modalPopup-detailBlockCloud.js
+  import('./scriptsComponents/modalPopup-detailBlockCloud.js')
+  .then(() => {
+    console.log('modalPopup-detailBlockCloud.js byl načten.');
+  })
+  .catch((error) => {
+    console.log(`modalPopup-detailBlockCloud.js se nepodařilo načíst. Chyba: ${error}`);
+  });
+
+  //modalPopup-editBlockCloud.js
+  import('./scriptsComponents/modalPopup-editBlockCloud.js')
+  .then(() => {
+    console.log('modalPopup-editBlockCloud.js byl načten.');
+  })
+  .catch((error) => {
+    console.log(`modalPopup-editBlockCloud.js se nepodařilo načíst. Chyba: ${error}`);
   });
 
   //popupCreatePlan.js

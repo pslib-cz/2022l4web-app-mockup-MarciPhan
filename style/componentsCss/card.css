@@ -32,4 +32,13 @@ line-clamp: 2;
     color: var(--gray);
     font-weight: 300;
   }
+  .description{
+    position: relative;
+    bottom: 0px;
+    font-size: small;
+    margin-bottom: -15px;
+}
+.card__text{
+  text-align: left;
+}
   

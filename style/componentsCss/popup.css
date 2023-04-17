@@ -23,17 +23,17 @@
     font-size: 18px;
     font-weight: bold;
   }
-  .popup--delete{
+  .popup--red{
     background-color: var(--light-red);
     color: var(--dark-red);
   }
-  .popup_close--delete{
+  .popup_close--red{
     color: var(--red);
   }
-  .popup--create{
+  .popup--green{
     background-color: var(--light-green);
     color: var(--dark-green);
   }
-  .popup_close--create{
+  .popup_close--green{
     color: var(--green);
   }
