@@ -58,6 +58,15 @@ import('./scriptsComponents/menu.js')
     console.log(`popupCreatePlan.js se nepodařilo načíst. Chyba: ${error}`);
   });
 
+    //blockPopups.js
+    import('./scriptsComponents/blockPopups.js')
+    .then(() => {
+      console.log('blockPopups.js byl načten.');
+    })
+    .catch((error) => {
+      console.log(`blockPopups.js se nepodařilo načíst. Chyba: ${error}`);
+    });
+   
   //cimport('./scriptsComponents/accordion.js')
   //.then(() => {
   //  console.log('accordion.js byl načten.');

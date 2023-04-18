@@ -1,9 +1,7 @@
-var modalClose = document.querySelector('.modalPopup-detailBlockCloud__close');
-var modalClose = document.querySelector('.modalPopup-detailBlockCloud__close');
-var myLinks = document.querySelectorAll('.button__detailBlockCloud');
+var popup1 = document.querySelector('.popup--save-on-cloud');
+var linkActivePopup1 = document.querySelector('.form__button--save-on-cloud');
 
-
-// Zavření modálního popupu a zobrazení popupu s ID modalPopup-editBlockCloud po kliknutí na odkaz s třídou .modalPopup-openEditBlockCloud
-editBlockLink.addEventListener('click', function() {
-  cloudEditBlockPopup.style.display = 'block';
+// Save on Cloud
+popup1.addEventListener('click', function() {
+  linkActivePopup1.style.display = 'block';
 });
