@@ -42,21 +42,6 @@ import('./scriptsComponents/menu.js')
     console.log(`modalPopup-editBlockCloud.js se nepodařilo načíst. Chyba: ${error}`);
   });
 
-  //popupCreatePlan.js
-  import('./scriptsComponents/popupCreatePlan.js')
-  .then(() => {
-    console.log('popupCreatePlan.js byl načten.');
-  })
-  .catch((error) => {
-    console.log(`popupCreatePlan.js se nepodařilo načíst. Chyba: ${error}`);
-  });
-  import('./scriptsComponents/popupCreatePlan.js')
-  .then(() => {
-    console.log('popupCreatePlan.js byl načten.');
-  })
-  .catch((error) => {
-    console.log(`popupCreatePlan.js se nepodařilo načíst. Chyba: ${error}`);
-  });
 
     //blockPopups.js
     import('./scriptsComponents/blockPopups.js')
@@ -67,6 +52,8 @@ import('./scriptsComponents/menu.js')
       console.log(`blockPopups.js se nepodařilo načíst. Chyba: ${error}`);
     });
    
+    
+
   //cimport('./scriptsComponents/accordion.js')
   //.then(() => {
   //  console.log('accordion.js byl načten.');

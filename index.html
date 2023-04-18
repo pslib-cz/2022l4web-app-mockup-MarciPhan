@@ -30,15 +30,91 @@
             </label>
             <a href="#" class="active__createpopup button button--green create"><span
                     class="fa-solid fa-plus"></span> Vytvořit program</a>
-
-            <div class="block create-content">
+<div class="content">
+    
+                <div class="block create-content">
+                    <form class="form">
+    
+    
+    
+    
+    
+    
+                        <div class="block__flex-row--left">
+                            <div>
+                                <input list="typy-programu" id="typ-programu" name="typ-programu"
+                                    class="form__input form__input--typ-programu">
+                                <span class="floating--label">Typ programu</span>
+                                <datalist id="typy-programu">
+                                    <option value="Nauka">Nauka</option>
+                                </datalist>
+                            </div>
+    
+                            <div>
+                                <input list="nazev-programu" id="nazev-programu" name="nazev-programu"
+                                    class="form__input form__input--druh-nauky">
+                                <span class="floating--label">Název programu</span>
+                                <datalist id="nazev-programu">
+                                    <option value="Uzlování">Uzlování (30 min)</option>
+                                </datalist>
+                            </div>
+    
+    
+                            <div>
+                                <input type="number" id="delka-programu" placeholder="v minutách" name="delka-programu"
+                                    min="0" class="form__input form__input--delka-programu">
+                                <span class="floating--label">Délka programu</span>
+                            </div>
+    
+                            <select class="form__input--select">
+                                <option style="background-image:url(male.png);">Marcipán</option>
+                                <option style="background-image:url(female.png);">Luky</option>
+                                <option style="background-image:url(others.png);">Ent</option>
+                            </select>
+    
+                        </div>
+                        <div>
+    
+                            <textarea id="textarea" name="textarea" class="form__textarea form--hidden"></textarea>
+                        </div>
+    
+    
+                    </form>
+                    <form class="form">
+    
+                        <div class="block__flex-row--space-between">
+                            <!--
+                            <label class="switch form__switch">
+                                <input type="checkbox" class="form__checkbox">
+                                <span class="slider form__slider"></span>
+                                <span class="switch-text">Započítat do celkové délky</span>
+                            </label>
+                        -->
+    
+    
+                            <div>
+                                <a class="button button--white form__button--save-on-cloud fa-solid fa-cloud-arrow-up"></a>
+                                <a class="button button--white form__button--up fas fa-arrow-up"></a>
+                                <a class="button button--white form__button--down fas fa-arrow-down"></a>
+                                <a class="button button--redtext form__button--delete fas fa-trash-alt"></a>
+                                <a class="button button--orange form__button--save fas fa-save"></a>
+                                <a href="#" class="button button--green button__createNewBlock fa-solid fa-plus">
+                                    
+                                </a>
+                            </div>
+                        </div>
+    
+                    </form>
+                </div>
+            </div>
+            <div class="block create-content2">
                 <form class="form">
-
-
-
-
-
-
+    
+    
+    
+    
+    
+    
                     <div class="block__flex-row--left">
                         <div>
                             <input list="typy-programu" id="typ-programu" name="typ-programu"
@@ -48,7 +124,7 @@
                                 <option value="Nauka">Nauka</option>
                             </datalist>
                         </div>
-
+    
                         <div>
                             <input list="nazev-programu" id="nazev-programu" name="nazev-programu"
                                 class="form__input form__input--druh-nauky">
@@ -57,52 +133,56 @@
                                 <option value="Uzlování">Uzlování (30 min)</option>
                             </datalist>
                         </div>
-
-
+    
+    
                         <div>
                             <input type="number" id="delka-programu" placeholder="v minutách" name="delka-programu"
                                 min="0" class="form__input form__input--delka-programu">
                             <span class="floating--label">Délka programu</span>
                         </div>
-
+    
                         <select class="form__input--select">
                             <option style="background-image:url(male.png);">Marcipán</option>
                             <option style="background-image:url(female.png);">Luky</option>
                             <option style="background-image:url(others.png);">Ent</option>
                         </select>
-
+    
                     </div>
                     <div>
-
+    
                         <textarea id="textarea" name="textarea" class="form__textarea form--hidden"></textarea>
                     </div>
-
-
+    
+    
                 </form>
                 <form class="form">
-
+    
                     <div class="block__flex-row--space-between">
-
+                        <!--
                         <label class="switch form__switch">
                             <input type="checkbox" class="form__checkbox">
                             <span class="slider form__slider"></span>
                             <span class="switch-text">Započítat do celkové délky</span>
                         </label>
-
-
-
+                    -->
+    
+    
                         <div>
                             <a class="button button--white form__button--save-on-cloud fa-solid fa-cloud-arrow-up"></a>
                             <a class="button button--white form__button--up fas fa-arrow-up"></a>
                             <a class="button button--white form__button--down fas fa-arrow-down"></a>
                             <a class="button button--redtext form__button--delete fas fa-trash-alt"></a>
                             <a class="button button--orange form__button--save fas fa-save"></a>
+                            <a href="#" class="button button--green button__createNewBlock fa-solid fa-plus">
+                                
+                            </a>
                         </div>
                     </div>
-
+    
                 </form>
             </div>
         </div>
+</div>
         <div id="two" class="tab-content">
             <h2>Knihovna programových bloků</h2>
             <a href="#" class="button button--green button__createBlockCloud">
@@ -180,22 +260,27 @@
         </div>
         <div class="popup popup--green popup--save-on-cloud">
             <span class="popup_close active__popup">&times;</span>
+            <p>Blok programu přidán do plánu</p>
+        </div>
+
+        <div class="popup popup--green popup--add-block">
+            <span class="popup_close active__popup">&times;</span>
             <p>Blok programu uložen do knihovny</p>
         </div>
 
-        <div id="popup_create-plan" class="popup popup--green">
+        <div class="popup popup--green popup_create-plan">
             <span class="popup_close popup_close--green">&times;</span>
             <p>Program vytvořen</p>
         </div>
-        <div id="popup_add-block_plan" class="popup popup--green">
+        <div class="popup popup--green popup_add-block_plan">
             <span class="popup_close popup_close--green">&times;</span>
-            <p>Blok programu přidán</p>
+            <p>Blok programu přidán do knihovny</p>
         </div>
-        <div id="popup_cloud-save-block_plan" class="popup popup--green">
+        <div class="popup popup--green popup_save-block_plan">
             <span class="popup_close popup_close--green">&times;</span>
             <p>Blok programu uložen</p>
         </div>
-        <div id="popup-deleteBlockCloud" class="popup popup--red">
+        <div class="popup popup--red popup-delete-block_plan">
             <span class="popup_close popup_close--red">&times;</span>
             <p>Blok programu smazán</p>
         </div>
@@ -253,7 +338,7 @@
                         Kartičky se rozprostřou na stůl jako pexeso. Potom si hráči postupně otáčí kartičky a odpovídají na otázky, když odpovísprávně, mohou si kartičku nechat a pokačovat jako při pexesu. Není-li otázka
                         zodpovězena správně, vrací se kartička zpět na stůl.</p>
                     <a class="button button--orange form__button--pencil modalPopup-openEditBlockCloud"><span class="fas fa-pen"></span> Upravit</a>
-                    <a class="button button--redtext form__button--delete popup-deleteBlockCloud"> <span class="fas fa-trash-alt"></span>
+                    <a class="button button--redtext form__button--delete popup-deleteBlockCloud2"> <span class="fas fa-trash-alt"></span>
                         Smazat</a>
                     <a class="button button--white modalPopup-detailBlockCloud__close"> Zrušit</a>
                 </div>

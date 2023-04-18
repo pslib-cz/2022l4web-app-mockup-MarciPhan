@@ -48,3 +48,9 @@
 .block__add{
   background-color: var(--light-green);
 }
+.create-content{
+  display: none;
+}
+.create-content2{
+  display: none;
+}

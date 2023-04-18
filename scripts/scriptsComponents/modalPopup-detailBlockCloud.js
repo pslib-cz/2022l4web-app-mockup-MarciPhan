@@ -3,8 +3,8 @@ var modalClose = document.querySelector('.modalPopup-detailBlockCloud__close');
 var myLinks = document.querySelectorAll('.button__detailBlockCloud');
 var editBlockLink = document.querySelector('.modalPopup-openEditBlockCloud');
 var cloudEditBlockPopup = document.getElementById('modalPopup-editBlockCloud');
-var deleteBlockLink = document.querySelector('.popup-deleteBlockCloud');
-var cloudDeleteBlockPopup = document.getElementById('popup-deleteBlockCloud');
+var deleteBlockLink = document.querySelector('.popup-deleteBlockCloud2');
+var cloudDeleteBlockPopup = document.querySelector('.popup-delete-block_plan');
 
 // Otevření modálního popupu po kliknutí na odkazy
 myLinks.forEach(function(link) {
@@ -25,7 +25,7 @@ editBlockLink.addEventListener('click', function() {
   cloudEditBlockPopup.style.display = 'block';
 });
 
-// Zavření modálního popupu a zobrazení popupu s ID modalPopup-editBlockCloud po kliknutí na odkaz s třídou .modalPopup-openEditBlockCloud
+// Zavření modálního popupu a zobrazení popupu s ID modalPopup-deleteBlockCloud po kliknutí na odkaz s třídou .modalPopup-deleteBlockCloud
 deleteBlockLink.addEventListener('click', function() {
   modal.style.display = 'none';
   cloudDeleteBlockPopup.style.display = 'block';

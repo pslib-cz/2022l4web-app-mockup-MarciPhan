@@ -2,7 +2,7 @@ var modal = document.getElementById('modalPopup-createBlockCloud');
 var modalClose = document.querySelector('.modalPopup-createBlockCloud__close');
 var myLinks = document.querySelectorAll('.button__createBlockCloud');
 var createBlockLink = document.querySelector('.modalPopup-createBlockCloud');
-var cloudCreateBlockPopup = document.getElementById('popup-createBlockCloud');
+var cloudCreateBlockPopup = document.querySelector('.popup_add-block_plan');
 
 // Otevření modálního popupu po kliknutí na odkazy
 myLinks.forEach(function(link) {

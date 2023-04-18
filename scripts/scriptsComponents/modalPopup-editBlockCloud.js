@@ -2,9 +2,9 @@ var modal = document.getElementById('modalPopup-editBlockCloud');
 var modalClose = document.querySelector('.modalPopup-editBlockCloud__close');
 var myLinks = document.querySelectorAll('.button__editBlockCloud');
 var saveBlockLink = document.querySelector('.modalPopup-saveBlockCloud');
-var cloudSaveBlockPopup = document.getElementById('popup_cloud-save-block_plan');
+var cloudSaveBlockPopup = document.querySelector('.popup--save-on-cloud');
 var deleteBlockLink = document.querySelector('.popup-deleteBlockCloud');
-var cloudDeleteBlockPopup = document.getElementById('popup-deleteBlockCloud');
+var cloudDeleteBlockPopup = document.querySelector('.popup-delete-block_plan');
 
 // Otevření modálního popupu po kliknutí na odkazy
 myLinks.forEach(function(link) {
