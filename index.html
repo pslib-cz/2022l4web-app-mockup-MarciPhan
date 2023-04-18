@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="/scripts/importScripts.js" defer></script>
     <link rel="stylesheet" href="style/importStyles.css">
-    <title>Document</title>
+    <title>Plan maker</title>
     <style>
 
 
@@ -41,15 +41,7 @@
     
     
                         <div class="block__flex-row--left">
-                            <div>
-                                <input list="typy-programu" id="typ-programu" name="typ-programu"
-                                    class="form__input form__input--typ-programu">
-                                <span class="floating--label">Typ programu</span>
-                                <datalist id="typy-programu">
-                                    <option value="Nauka">Nauka</option>
-                                </datalist>
-                            </div>
-    
+                               
                             <div>
                                 <input list="nazev-programu" id="nazev-programu" name="nazev-programu"
                                     class="form__input form__input--druh-nauky">
@@ -58,7 +50,15 @@
                                     <option value="Uzlování">Uzlování (30 min)</option>
                                 </datalist>
                             </div>
-    
+
+                            <div>
+                                <input list="typy-programu" id="typ-programu" name="typ-programu"
+                                    class="form__input form__input--typ-programu">
+                                <span class="floating--label">Typ programu</span>
+                                <datalist id="typy-programu">
+                                    <option value="Nauka">Nauka</option>
+                                </datalist>
+                            </div>
     
                             <div>
                                 <input type="number" id="delka-programu" placeholder="v minutách" name="delka-programu"
@@ -117,6 +117,14 @@
     
                     <div class="block__flex-row--left">
                         <div>
+                            <div>
+                                <input list="nazev-programu" id="nazev-programu" name="nazev-programu"
+                                    class="form__input form__input--druh-nauky">
+                                <span class="floating--label">Název programu</span>
+                                <datalist id="nazev-programu">
+                                    <option value="Uzlování">Uzlování (30 min)</option>
+                                </datalist>
+                            </div>
                             <input list="typy-programu" id="typ-programu" name="typ-programu"
                                 class="form__input form__input--typ-programu">
                             <span class="floating--label">Typ programu</span>
@@ -124,16 +132,6 @@
                                 <option value="Nauka">Nauka</option>
                             </datalist>
                         </div>
-    
-                        <div>
-                            <input list="nazev-programu" id="nazev-programu" name="nazev-programu"
-                                class="form__input form__input--druh-nauky">
-                            <span class="floating--label">Název programu</span>
-                            <datalist id="nazev-programu">
-                                <option value="Uzlování">Uzlování (30 min)</option>
-                            </datalist>
-                        </div>
-    
     
                         <div>
                             <input type="number" id="delka-programu" placeholder="v minutách" name="delka-programu"

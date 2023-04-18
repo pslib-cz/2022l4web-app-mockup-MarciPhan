@@ -10,6 +10,7 @@ const popup3 = document.querySelector('.popup-delete-block_plan');
 const button4 = document.querySelector('.active__createpopup');
 const popup4 = document.querySelector('.popup_create-plan');
 const blockPlan = document.querySelector('.create-content');
+const switcher = document.querySelector('.switch');
 
 const button5 = document.querySelector('.button__createNewBlock');
 const popup5 = document.querySelector('.popup--add-block');
@@ -31,6 +32,8 @@ button3.addEventListener('click', () => {
 button4.addEventListener('click', () => {
   popup4.style.display = 'block';
   blockPlan.style.display = 'block';
+  button4.style.display = 'none';
+  switcher.style.display = 'inline-block';
 });
 
 button5.addEventListener('click', () => {
