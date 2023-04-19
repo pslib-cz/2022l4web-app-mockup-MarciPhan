@@ -29,24 +29,22 @@ In English:
 Plan maker is an application that allows users to create their daily plans using program blocks. Users can create new blocks, edit or remove existing ones, and move them around. The blocks can also be saved in a reusable block list, and the length of each block can be calculated. The entire editor should be user-friendly and intuitive to allow users to easily create and modify their plans.
 
 The basic application is divided into two tabs:
+Creator tab:
+In this tab, users can create their daily schedule. Clicking on the "Create program" button creates the first block in the creator and removes the button.
+- A new toggle switch named "Edit program" appears. When this switch is activated, the program blocks can be edited. When it's deactivated, the program is saved in the browser cache. When the user returns, the last saved program is displayed.
+Program block content:
+ - Program name: Users can enter the program name, and the system will automatically suggest previously saved program names. If the user confirms a name that's already saved, all other information about the program block is filled in.
+- Program type: Users can enter the program type, and the system will automatically suggest previously saved types. Program types can include work, school, leisure, etc.
+Program length: Users can set the program length in minutes.
+- Text editor: Users can enter notes or other information about the program in the block.
+Responsible person: Users can select a person responsible for the program block from a saved list.
+- Save block to library: Users can upload a newly created block to the program block database.
+Move block up or down.
+- Delete block from the creator.
+- Save block in the browser cache.
+- Add a new block, which is added below the current block.
 
-    Creator tab:
+Reusable blocks tab:
 
-    In this tab, users can create their daily schedule. Clicking on the "Create program" button creates the first block in the creator and removes the button.
-        - A new toggle switch named "Edit program" appears. When this switch is activated, the program blocks can be edited. When it's deactivated, the program is saved in the browser cache. When the user returns, the last saved program is displayed.
-    Program block content:
-       - Program name: Users can enter the program name, and the system will automatically suggest previously saved program names. If the user confirms a name that's already saved, all other information about the program block is filled in.
-        - Program type: Users can enter the program type, and the system will automatically suggest previously saved types. Program types can include work, school, leisure, etc.
-        Program length: Users can set the program length in minutes.
-       - Text editor: Users can enter notes or other information about the program in the block.
-        Responsible person: Users can select a person responsible for the program block from a saved list.
-        - Save block to library: Users can upload a newly created block to the program block database.
-        Move block up or down.
-        - Delete block from the creator.
-        - Save block in the browser cache.
-        - Add a new block, which is added below the current block.
-
-    Reusable blocks tab:
-
-    In this tab, users can find all saved blocks from the creator. Clicking on the "Create new program block" button creates a new program block, which is automatically saved to the program block library. The program type defines the category name in which the program blocks are saved. The program blocks can also be edited or deleted in this library.
-        -Users can view the details and delete each saved block.
+In this tab, users can find all saved blocks from the creator. Clicking on the "Create new program block" button creates a new program block, which is automatically saved to the program block library. The program type defines the category name in which the program blocks are saved. The program blocks can also be edited or deleted in this library.
+-Users can view the details and delete each saved block.
