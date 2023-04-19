@@ -13,7 +13,7 @@ const blockPlan = document.querySelector('.create-content');
 const switcher = document.querySelector('.switch');
 
 const button5 = document.querySelector('.button__createNewBlock');
-const popup5 = document.querySelector('.popup--add-block');
+const popup5 = document.querySelector('.popup_add-block_library');
 const blockPlan2 = document.querySelector('.create-content2');
 
 
