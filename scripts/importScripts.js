@@ -51,14 +51,3 @@ import('./scriptsComponents/menu.js')
     .catch((error) => {
       console.log(`blockPopups.js se nepodařilo načíst. Chyba: ${error}`);
     });
-   
-    
-
-  //cimport('./scriptsComponents/accordion.js')
-  //.then(() => {
-  //  console.log('accordion.js byl načten.');
-  // })
- // .catch(() => {
-  //  console.log('accordion.js se nepodařilo načíst.');
- // });
-
