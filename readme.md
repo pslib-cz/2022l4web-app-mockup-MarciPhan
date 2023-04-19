@@ -24,3 +24,15 @@ Základní aplikace se rozděluje do dvou záložek:
 2. Záložka: Znovupoužitelné bloky
 - V této záložce si uživatel naleznete všechny uložené bloky z tvůrce programu. Po kliknutí na tlačítko " Vytvořit nový programový blok" se vytvoří nový programový blok, který se automaticky uloží do knihovny bloků programu. Typ programu definuje název kategorie, do které budou ukládány bloky programu. Bloky programu jdou také v této knihovně editovat či mazat.
     - U každého uloženého bloku lze zobrazit detail a smazat ho.
+### Tvůrce programu bez bloků programu
+![Screen1](/images/Screenshot_16.jpg)
+### Tvůrce programu s dvěmi programovými bloky
+![Screen2](/images/Screenshot_17.jpg)
+### Knihovna bloků programu
+![Screen3](/images/Screenshot_18.jpg)
+### Detail bloku programu v knihovně programů (popup je zarovnán na střed obrazovky)
+![Screen4](/images/Screenshot_19.jpg)
+### Možnost úpravy bloku programu v knihovně programů (popup je zarovnán na střed obrazovky)
+![Screen5](/images/Screenshot_20.jpg)
+### Vytvoření nového bloku programu v knihovně programů (popup je zarovnán na střed obrazovky)
+![Screen6](/images/Screenshot_21.jpg)
