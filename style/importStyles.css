@@ -7,9 +7,6 @@
     @import url(./componentsCss/formInputs.css) layer(componentsCss);
     @import url(./componentsCss/switch.css) layer(componentsCss);
     @import url(./componentsCss/button.css) layer(componentsCss);
-    @import url(./componentsCss/buttonGreen.css) layer(componentsCss);
-    @import url(./componentsCss/buttonWhite.css) layer(componentsCss);
-    @import url(./componentsCss/formInput.css) layer(componentsCss);
     @import url(./componentsCss/card.css) layer(componentsCss);
     @import url(./componentsCss/popup.css) layer(componentsCss);
     @import url(./componentsCss/modalPopup.css) layer(componentsCss);
