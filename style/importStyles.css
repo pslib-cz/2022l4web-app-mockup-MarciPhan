@@ -1,18 +1,18 @@
 @layer fonts, componentsCss, mainCss;
 
-    @import url(styles/mainCss.css) layer(mainCss);
+    @import url(./styles/mainCss.css) layer(mainCss);
 
-    @import url(componentsCss/block.css) layer(componentsCss);
-    @import url(componentsCss/switch.css) layer(componentsCss);
-    @import url(componentsCss/menu.css) layer(componentsCss);
-    @import url(componentsCss/formInputs.css) layer(componentsCss);
-    @import url(componentsCss/button.css) layer(componentsCss);
-    @import url(componentsCss/buttonGreen.css) layer(componentsCss);
-    @import url(componentsCss/buttonWhite.css) layer(componentsCss);
-    @import url(componentsCss/formInput.css) layer(componentsCss);
-    @import url(componentsCss/card.css) layer(componentsCss);
-    @import url(componentsCss/popup.css) layer(componentsCss);
-    @import url(componentsCss/modalPopup.css) layer(componentsCss);
+    @import url(./componentsCss/block.css) layer(componentsCss);
+    @import url(./componentsCss/menu.css) layer(componentsCss);
+    @import url(./componentsCss/formInputs.css) layer(componentsCss);
+    @import url(./componentsCss/switch.css) layer(componentsCss);
+    @import url(./componentsCss/button.css) layer(componentsCss);
+    @import url(./componentsCss/buttonGreen.css) layer(componentsCss);
+    @import url(./componentsCss/buttonWhite.css) layer(componentsCss);
+    @import url(./componentsCss/formInput.css) layer(componentsCss);
+    @import url(./componentsCss/card.css) layer(componentsCss);
+    @import url(./componentsCss/popup.css) layer(componentsCss);
+    @import url(./componentsCss/modalPopup.css) layer(componentsCss);
 
     @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
 
